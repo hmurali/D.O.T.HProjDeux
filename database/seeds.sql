@@ -1,0 +1,5 @@
+INSERT INTO parks (park_name, park_address, is_petfriendly, baseball_field, basket_court, tennis_court, playground, trail, body_water ) VALUES ('Lincoln Park', '500-5700 N. Lake Shore Drive', true, true, true, true, true, true, true);
+INSERT INTO parks (park_name, park_address, is_petfriendly, baseball_field, basket_court, tennis_court, playground, trail, body_water ) VALUES ('Millennium Park', '201 E Randolph St', true, true, true, true, true, true, true);
+INSERT INTO parks (park_name, park_address, is_petfriendly, baseball_field, basket_court, tennis_court, playground, trail, body_water ) VALUES ('Wiggly Feild Dog Park', '2645 N Sheffield Ave,', true, false, false, false, false, false, false);
+INSERT INTO parks (park_name, park_address, is_petfriendly, baseball_field, basket_court, tennis_court, playground, trail, body_water ) VALUES ('Jonquil Park', '1001 W Wrightwood Ave,', true, false, false, false, true, true, false);
+INSERT INTO parks (park_name, park_address, is_petfriendly, baseball_field, basket_court, tennis_court, playground, trail, body_water ) VALUES ('Oz Park', ' 2021 N Burling St,', true, true, ture, true, true, true, false);

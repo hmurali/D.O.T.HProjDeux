@@ -1,0 +1,10 @@
+#header {
+    background-image: url(https://www.oneelevenchicago.com/wp-content/uploads/2019/05/Chicago-parks-and-skyline.jpg);
+    padding-bottom: 30px;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: center; 
+    background-size: cover;
+    /* background-position-y: -300px; */
+}
