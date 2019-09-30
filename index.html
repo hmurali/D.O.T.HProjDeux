@@ -95,7 +95,7 @@
         </p>
         </form>
         <p></p>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Search Parks!
+        <button class="btn waves-effect waves-light" id="parks-search" type="submit" name="action">Search Parks!
           <i class="material-icons right"></i>
         </button>
       </p>
@@ -103,3 +103,14 @@
     </div>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $("#parks-search").on("click", function(event){
+    event.preventDefault();
+    $("input[type='checkbox']").checked;
+    console.log("Park being searched for: " + $("#search").val().trim());
+    console.log($("input[type='checkbox']")[0].checked);
+  })
+  
+
+</script>
