@@ -12,16 +12,16 @@
     position: absolute;
     top:0;
     width:100%;
-    background-color: green; 
+    background-color: rgb(20, 173, 20); 
     position: center;
 }
 
 .header-content nav{
-    background:green;
+    background: rgb(20, 173, 20);
 }
 
 .nav-wrapper{
-    background:green;
+    background: rgb(20, 173, 20);
 
 }
 
@@ -33,6 +33,7 @@
     float: top;
     font-size: 50px;
     color: white;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Vollkorn SC', serif, bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    white-space: nowrap;
    }
