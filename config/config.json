@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "",
-    "database": "park_db",
+    "password": "Scenario1!",
+    "database": "parks_db",
     "host": "localhost",
     "dialect": "mysql"
   },
