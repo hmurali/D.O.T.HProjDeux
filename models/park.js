@@ -29,6 +29,10 @@ module.exports = function(sequelize, DataTypes) {
     body_water: {
       type: DataTypes.BOOLEAN
     },
+    picture_URL: {
+      type: DataTypes.STRING(500)
+    },
+
 
    
     // picture_url: {

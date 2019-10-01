@@ -47,45 +47,37 @@ module.exports = function (app) {
 
     console.log(where)
 
-    db.Park.findAll ({where})  
-    .then(function(parkRespose){
+    db.Park.findAll({ where })
+      .then(function (parkRespose) {
 
-    var parks = []
+        var parks = []
 
-    console.log("__________")
+        console.log("__________")
 
-    parkRespose.forEach(function (park) {
+        parkRespose.forEach(function (park) {
 
-      console.log(park.dataValues)
+          console.log(park.dataValues)
 
-      parks.push (park.dataValues)
+          parks.push(park.dataValues)
 
 
-    })
       
-      // console.log(typeof parkRespose)
+        })
+        
+        res.render("results", { parks })
+        // console.log(typeof parkRespose)
 
-    })
-
-
-    .catch()
-
-
+      })
 
 
+      .catch( function(err){
 
+        console.log(err)
 
+      })
 
+      
 
-    var requirment = {
-      petFriendly: 'on',
-      baseballField: 'on',
-      basketballCourt: 'on',
-      bodyOfWater: 'on',
-      tennisCourt: 'on',
-      playground: 'on',
-      trail: 'on',
-    }
 
   })
 
