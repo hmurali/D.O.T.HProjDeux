@@ -23,5 +23,6 @@ CREATE TABLE parks
     playground boolean,
     trail boolean,
     body_water boolean,
+	picture_url varchar (300)
 	PRIMARY KEY (id),
 	FOREIGN KEY (client_id) REFERENCES clients(id)

@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>
-    Project #2
-  </title>
-  <link rel="stylesheet" type="text/css" href="./assets/style.css" />
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Paytone+One|Vollkorn+SC&display=swap" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
-
 <header>
 
   <div class="header-content">
@@ -45,29 +31,29 @@
 
 
 <body>
-  <form action="#">
+  <form action="/results" method="POST">
     <div class="row">
 
       <div class="col s6">
         <label>
-          <input type="checkbox" />
+          <input type="checkbox" name= "is_petfriendly" />
           <span>Pet Friendly</span>
         </label>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="checkbox" name= "baseball_field"/>
             <span>Baseball Field</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="checkbox" name= "basket_court"/>
             <span>Basketball Court</span>
           </label>
         </p>
         <p>
             <label>
-              <input type="checkbox" />
+              <input type="checkbox"name= "body_water" />
               <span>Body of Water</span>
             </label>
           </p>
@@ -77,45 +63,27 @@
       <div class="col s6">
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="checkbox" name= "tennis_court"/>
             <span>Tennis Court</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="checkbox" name= "playground" />
             <span>Playground</span>
           </label>
         </p>
         <p>
-          <label>
-            <input type="checkbox" />
+          <label> 
+            <input type="checkbox" name= "trail" />
             <span>Trail</span>
           </label>
         </p>
         </form>
         <p></p>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Search Parks!
+        <button class="btn waves-effect waves-light" type="submit">Search Parks!
           <i class="material-icons right"></i>
         </button>
       </p>
       </div>
     </div>
-
-    <!-- <script>
-
-        $(".btn").on("click", function(event){
-          event.preventDefault();
-          
-          }
-
-          $("reference the id or class of our search bar").val().trim();
-
-          $("input[type='checkbox']").val();
-
-          console.log()
-
-
-    </script> -->
-
-</body>
