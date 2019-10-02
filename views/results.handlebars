@@ -1,9 +1,27 @@
   <link rel="stylesheet" href="/styles/results.css" media="screen" title="no title" charset="utf-8">
 
 <header>
+
+<h1>Park Results:</h1>
+
+
+</header>
+
+
+
+<body>
     {{#each parks}}
     <h1>{{{this.park_name}}}</h1>
-    <h1>{{{this.park_name}}}</h1>
-    <img src={{{this.picture_URL}}}>
+    <h3>{{{this.park_address}}}</h1>
+     <div>
+    <img class= "image" src={{{this.picture_URL}}}>
     {{/each}}
-</header>
+    </div>
+    {{!-- <h4>Featuers: {{{this.is_petfriendly,}}} </h4> --}}
+
+   
+
+   
+
+
+</body>
