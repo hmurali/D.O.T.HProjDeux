@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Scenario1!",
+    "password": "Strawberry!234Pw",
     "database": "parks_db",
     "host": "localhost",
     "dialect": "mysql"

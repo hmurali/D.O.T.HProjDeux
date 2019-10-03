@@ -4,7 +4,7 @@ CREATE DATABASE parks_db;
 
 USE parks_db;
 
-CREATE TABLE parks
+CREATE TABLE clients
 (
 	id int NOT NULL AUTO_INCREMENT,
 	client_name varchar(255) NOT NULL,
@@ -23,6 +23,8 @@ CREATE TABLE parks
     playground boolean,
     trail boolean,
     body_water boolean,
-	picture_url varchar (300)
+	picture_url varchar (300),
 	PRIMARY KEY (id),
-	FOREIGN KEY (client_id) REFERENCES clients(id)
+	FOREIGN KEY (id) REFERENCES clients(id)
+);
+drop table parks;
