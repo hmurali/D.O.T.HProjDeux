@@ -27,4 +27,3 @@ CREATE TABLE parks
 	PRIMARY KEY (id),
 	FOREIGN KEY (id) REFERENCES clients(id)
 );
-drop table parks;
