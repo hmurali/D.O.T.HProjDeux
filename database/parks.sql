@@ -25,4 +25,4 @@ CREATE TABLE parks
     body_water boolean,
 	picture_url varchar (300)
 	PRIMARY KEY (id),
-	FOREIGN KEY (client_id) REFERENCES clients(id)
+	
