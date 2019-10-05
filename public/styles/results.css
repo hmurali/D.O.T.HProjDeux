@@ -16,3 +16,17 @@ header {
     width: 100%;
     display: inline-block;
 }
+
+/* this part only for geo map */
+#map {
+    display: block;
+    width: 50%;
+    margin-bottom: 3px;
+    height: 450px;
+    background: grey;
+  }
+  
+  #panel {
+    display: none;
+  }
+  /* MAP */

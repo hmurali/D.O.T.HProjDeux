@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "Strawberry!234Pw",
-    "database": "parks_db",
-    "host": "localhost",
+    "username": "dl6unth9eiosrofg",
+    "password": "af6uwoe4956all3l",
+    "database": "ajrdijptsxwbe7op",
+    "host": "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {

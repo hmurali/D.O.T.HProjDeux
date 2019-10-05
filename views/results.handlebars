@@ -13,6 +13,8 @@
     {{#each parks}}
     <h1>{{{this.park_name}}}</h1>
     <h3>{{{this.park_address}}}</h1>
+    <button class = "allButtons" id = {{{this.park_name}}} data = {{{this.park_name}}}>Show on the map</button>
+    <div id = "places" ></div>
      <div>
     <img class= "image" src={{{this.picture_URL}}}>
     {{/each}}
