@@ -1,11 +1,20 @@
 {
   "development": {
+    "username": "dl6unth9eiosrofg",
+    "password": "af6uwoe4956all3l",
+    "database": "ajrdijptsxwbe7op",
+    "host": "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+
+    "local": {
     "username": "root",
-    "password": "Scenario1!",
+    "password": "",
     "database": "parks_db",
     "host": "localhost",
     "dialect": "mysql"
   },
+
   "production": {
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"

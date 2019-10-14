@@ -3,7 +3,7 @@ var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
-
+var $parkSearch = $("#parks-search")
 // The API object contains methods for each kind of request we'll make
 var API = {
   savePark: function(park) {
@@ -32,7 +32,7 @@ var API = {
 
 // refreshExamples gets new examples from the db and repopulates the list
 var refreshExamples = function() {
-  API.getExamples().then(function(data) {
+  API.getParks().then(function(data) {
     var $examples = data.map(function(example) {
       var $a = $("<a>")
         .text(example.text)
@@ -95,5 +95,6 @@ var handleDeleteBtnClick = function() {
 };
 
 // Add event listeners to the submit and delete buttons
+$parkSearch.on("click",  refreshExamples);
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);

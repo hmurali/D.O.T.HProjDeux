@@ -43,3 +43,17 @@ db.sequelize.sync(syncOptions).then(function() {
 });
 
 module.exports = app;
+
+// {
+//   "development": {
+//     "username": "root",
+//     "password": "",
+//     "database": "parks_db",
+//     "host": "localhost",
+//     "dialect": "mysql"
+//   },
+//   "production": {
+//     "use_env_variable": "JAWSDB_URL",
+//     "dialect": "mysql"
+//   }
+// }
