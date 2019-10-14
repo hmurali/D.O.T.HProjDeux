@@ -9,7 +9,11 @@
 
     "local": {
     "username": "root",
+<<<<<<< HEAD
     "password": "",
+=======
+    "password": "Strawberry!234Pw",
+>>>>>>> 7207499ca1055eb366fadab99f057314bdffa3d7
     "database": "parks_db",
     "host": "localhost",
     "dialect": "mysql"

@@ -3,7 +3,11 @@ var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
+<<<<<<< HEAD
 var $parkSearch = $("#parks-search")
+=======
+var $searchParksBtn = $("#parks-search");
+>>>>>>> 7207499ca1055eb366fadab99f057314bdffa3d7
 // The API object contains methods for each kind of request we'll make
 var API = {
   savePark: function(park) {
@@ -16,10 +20,11 @@ var API = {
       data: JSON.stringify(park)
     });
   },
-  getParks: function() {
+  getParks: function(park) {
     return $.ajax({
       url: "api/parks",
-      type: "GET"
+      type: "GET",
+      data: JSON.parse(park)
     });
   },
   deleteExample: function(id) {
@@ -94,7 +99,11 @@ var handleDeleteBtnClick = function() {
   });
 };
 
+var handleParksSearchBtnClick = function() {
+  API.getParks();
+}
 // Add event listeners to the submit and delete buttons
 $parkSearch.on("click",  refreshExamples);
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+$searchParksBtn.on("click", handleParksSearchBtnClick);
